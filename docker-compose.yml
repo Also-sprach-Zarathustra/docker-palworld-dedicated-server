@@ -22,7 +22,7 @@ services:
       - COMMUNITY_SERVER=false
       - RCON_ENABLED=true
       - RCON_PORT=25575
-      - PUBLIC_IP=3.35.13.158
+      - PUBLIC_IP=34.64.219.85
       - PUBLIC_PORT=8211
       - SERVER_NAME=charon-docker-generated-123
       - SERVER_DESCRIPTION=Palworld-Dedicated-Server running in Docker by charon
@@ -33,5 +33,5 @@ services:
   
   rcon:
     image: outdead/rcon:latest
-    entrypoint: ['/rcon', '-a', '3.35.13.158:25575', '-p', 'etech1234']
+    entrypoint: ['/rcon', '-a', '34.64.219.85:25575', '-p', 'etech1234']
     profiles: ['rcon'] 
